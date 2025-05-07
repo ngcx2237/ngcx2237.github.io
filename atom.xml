@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://ngcx2237.github.io</id>
+    <title>ngcx2237</title>
+    <updated>2025-05-07T19:37:46.115Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://ngcx2237.github.io"/>
+    <link rel="self" href="https://ngcx2237.github.io/atom.xml"/>
+    <subtitle>một blog cá nhân nho nhỏ.</subtitle>
+    <logo>https://ngcx2237.github.io/images/avatar.png</logo>
+    <icon>https://ngcx2237.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, ngcx2237</rights>
+    <entry>
+        <title type="html"><![CDATA[Hi]]></title>
+        <id>https://ngcx2237.github.io/post/hi/</id>
+        <link href="https://ngcx2237.github.io/post/hi/">
+        </link>
+        <updated>2025-05-07T17:40:02.000Z</updated>
+        <content type="html"><![CDATA[<p>Xin chào! First post!</p>
+]]></content>
+    </entry>
+</feed>
