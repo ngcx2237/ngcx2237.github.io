@@ -72,7 +72,7 @@ export default defineConfig({
     fontFamily: fonts,
   },
   shortcuts: [
-    ['post-title', 'text-5 font-bold lh-7.5 m-0'],
+    ['post-title', 'font-neco text-5 font-bold lh-7.5 m-0'],
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
   safelist: [

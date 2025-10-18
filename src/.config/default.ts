@@ -5,28 +5,20 @@ import type { ThemeConfig } from '~/types'
 
 export const defaultConfig: ThemeConfig = {
   site: {
-    title: '活版印字',
+    title: 'Ma Chérie',
     subtitle: 'Typography',
-    author: 'Moeyua',
-    description: 'Rediscory the beauty of typography',
-    website: 'https://astro-theme-typography.vercel.app/',
+    author: 'Lamn',
+    description: 'The cottage house in my imagination',
+    website: 'https://ngcx2237.github.io/',
     pageSize: 5,
     socialLinks: [
       {
         name: 'github',
-        href: 'https://github.com/moeyua/astro-theme-typography',
+        href: 'https://github.com/ngcx2237',
       },
       {
         name: 'rss',
         href: '/atom.xml',
-      },
-      {
-        name: 'twitter',
-        href: 'https://github.com/moeyua/astro-theme-typography',
-      },
-      {
-        name: 'mastodon',
-        href: 'https://github.com/moeyua/astro-theme-typography',
       },
     ],
     navLinks: [
@@ -55,8 +47,8 @@ export const defaultConfig: ThemeConfig = {
     ],
   },
   appearance: {
-    theme: 'system',
-    locale: 'zh-cn',
+    theme: 'light',
+    locale: 'en-us',
     colorsLight: {
       primary: '#2e405b',
       background: '#ffffff',
@@ -67,12 +59,12 @@ export const defaultConfig: ThemeConfig = {
     },
     fonts: {
       header:
-        '"HiraMinProN-W6","Source Han Serif CN","Source Han Serif SC","Source Han Serif TC",serif',
-      ui: '"Source Sans Pro","Roboto","Helvetica","Helvetica Neue","Source Han Sans SC","Source Han Sans TC","PingFang SC","PingFang HK","PingFang TC",sans-serif',
+        '"Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+      ui: '"Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
     },
   },
   seo: {
-    twitter: '@moeyua13',
+    twitter: '@ngcx2237',
     meta: [],
     link: [],
   },
