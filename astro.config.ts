@@ -29,7 +29,7 @@ export default defineConfig({
       rehypeKatex,
     ],
     shikiConfig: {
-      theme: 'dracula',
+      theme: 'rose-pine',
       wrap: true,
     },
   },
@@ -44,7 +44,7 @@ export default defineConfig({
       cache: true,
       preload: true,
       accessibility: true,
-      smoothScrolling: true,
+      smoothScrolling: true, // Re-enable smooth scrolling with custom footnote handling
       updateHead: true,
       updateBodyClass: true,
     }),

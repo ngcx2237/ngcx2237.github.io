@@ -1,10 +1,11 @@
 import presetAttributify from '@unocss/preset-attributify'
+import presetWebFonts from '@unocss/preset-web-fonts'
+import presetWind3 from '@unocss/preset-wind3'
 import transformerDirectives from '@unocss/transformer-directives'
 import {
   defineConfig,
   presetIcons,
   presetTypography,
-  presetWind3,
   transformerVariantGroup,
 } from 'unocss'
 import presetTheme from 'unocss-preset-theme'
@@ -29,6 +30,10 @@ const cssExtend = {
     'font-size': '90%',
     'background-color': '#f9f2f4',
     'border-radius': '4px',
+  },
+
+  ':is(.prose) :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::after': {
+    display: 'none',
   },
 
   'li': {
@@ -58,6 +63,12 @@ export default defineConfig({
     presetTypography({ cssExtend }),
     presetAttributify(),
     presetIcons({ scale: 1.2, warn: true }),
+    presetWebFonts({
+      provider: 'fontshare',
+      fonts: {
+        neco: 'Neco',
+      },
+    }),
     presetTheme ({
       theme: {
         dark: {
@@ -72,7 +83,7 @@ export default defineConfig({
     fontFamily: fonts,
   },
   shortcuts: [
-    ['post-title', 'font-neco text-5 font-bold lh-7.5 m-0'],
+    ['post-title', 'font-header text-5 font-bold lh-7.5 m-0'],
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
   safelist: [

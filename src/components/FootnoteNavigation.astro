@@ -1,0 +1,151 @@
+<script>
+  // Handle footnote navigation with smooth scrolling
+  function handleFootnoteNavigation() {
+    // Handle footnote reference clicks
+    document.querySelectorAll('a[href^="#user-content-fn"]').forEach((link) => {
+      link.addEventListener('click', (e: Event) => {
+        e.preventDefault()
+        const targetId = link.getAttribute('href')
+        if (!targetId)
+return
+
+        const targetElement = document.querySelector(targetId) as HTMLElement | null
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+          })
+
+          // Add highlight effect
+          targetElement.style.backgroundColor = 'rgba(59, 130, 246, 0.1)'
+          setTimeout(() => {
+            targetElement.style.backgroundColor = ''
+          }, 2000)
+        }
+      })
+    })
+
+    // Handle footnote return clicks
+    document.querySelectorAll('a[href^="#user-content-fnref"]').forEach((link) => {
+      link.addEventListener('click', (e: Event) => {
+        e.preventDefault()
+        const targetId = link.getAttribute('href')
+        if (!targetId) 
+return
+
+        const targetElement = document.querySelector(targetId) as HTMLElement | null
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+          })
+
+          // Add highlight effect
+          targetElement.style.backgroundColor = 'rgba(59, 130, 246, 0.1)'
+          setTimeout(() => {
+            targetElement.style.backgroundColor = ''
+          }, 2000)
+        }
+      })
+    })
+  }
+
+  // Handle initial page load with hash in URL
+  function handleInitialHash() {
+    const hash = window.location.hash
+    if (hash && (hash.startsWith('#user-content-fn') || hash.startsWith('#user-content-fnref'))) {
+      const targetElement = document.querySelector(hash) as HTMLElement | null
+      if (targetElement) {
+        // Wait a bit for the page to fully render
+        setTimeout(() => {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+          })
+
+          // Add highlight effect
+          targetElement.style.backgroundColor = 'rgba(59, 130, 246, 0.1)'
+          setTimeout(() => {
+            targetElement.style.backgroundColor = ''
+          }, 2000)
+        }, 100)
+      }
+    }
+  }
+
+  // Initialize when DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    handleFootnoteNavigation()
+    handleInitialHash()
+  })
+
+  // Handle Astro/Swup page transitions more robustly
+  // Re-initialize after any page content change
+  let initializationTimeout: ReturnType<typeof setTimeout> | null = null
+
+  function reinitializeFootnotes() {
+    // Clear any pending initialization
+    if (initializationTimeout) {
+      clearTimeout(initializationTimeout)
+    }
+
+    // Wait for content to stabilize
+    initializationTimeout = setTimeout(() => {
+      handleFootnoteNavigation()
+      handleInitialHash()
+      initializationTimeout = null
+    }, 600) // Even longer delay for complex transitions
+  }
+
+  // Listen for various transition events
+  document.addEventListener('astro:page-load', reinitializeFootnotes)
+  document.addEventListener('swup:contentReplaced', reinitializeFootnotes)
+
+  // Handle Swup page transitions (when navigating between pages)
+  function handleSwupTransition() {
+    // Wait for Swup to complete the transition
+    setTimeout(() => {
+      handleFootnoteNavigation()
+      handleInitialHash()
+    }, 500) // Wait longer for transition animation to complete
+  }
+
+  // Listen for Swup events (try multiple event names)
+  document.addEventListener('swup:contentReplaced', handleSwupTransition)
+  document.addEventListener('swup:pageView', handleSwupTransition)
+  document.addEventListener('swup:animationInDone', handleSwupTransition)
+  document.addEventListener('swup:transitionEnd', handleSwupTransition)
+
+  // Also use a more general approach - observe DOM changes
+  const observer = new MutationObserver(() => {
+    // Check if footnote links exist and reinitialize if needed
+    if (document.querySelector('a[href^="#user-content-fn"]')) {
+      handleFootnoteNavigation()
+    }
+  })
+
+  // Start observing when DOM is ready
+  document.addEventListener('DOMContentLoaded', () => {
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    })
+  })
+
+  // Also handle hash changes (for single page applications)
+  window.addEventListener('hashchange', handleInitialHash)
+</script>
+
+<style>
+  /* Add smooth transitions for footnote highlights */
+  :target {
+    scroll-margin-top: 2rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .footnote-item:target {
+    background-color: rgba(59, 130, 246, 0.05);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+  }
+</style>
