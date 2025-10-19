@@ -50,34 +50,6 @@ You can fork the repository to your account by clicking the Fork button in the u
 
 Or you can refer to the [Astro](https://docs.astro.build/guides/deploy/) documentation to deploy to your favorite platform.
 
-### Deploy to GitHub Pages (Automated)
-
-This repository includes a GitHub Actions workflow that automatically builds and deploys your site to GitHub Pages whenever you push to the main branch.
-
-**Setup Instructions:**
-
-1. **Enable GitHub Pages**: Go to your repository Settings → Pages → Source → Select "GitHub Actions"
-
-2. **Configure your site URL**: Update the `site` configuration in `src/.config/user.ts`:
-
-   ```TypeScript
-   site: {
-     website: 'https://yourusername.github.io',
-     // other config
-   }
-   ```
-
-3. **Push to main branch**: The workflow will automatically trigger and deploy your site
-
-The workflow will:
-
-- Install dependencies using pnpm
-- Build your Astro site
-- Deploy to GitHub Pages
-- Run on every push to main branch and pull requests
-
-You can monitor the deployment status in the Actions tab of your repository.
-
 ### Add post
 
 You can add content by creating a new markdown file in `src/content/posts`. The file need metadata in the frontmatter, like this:
