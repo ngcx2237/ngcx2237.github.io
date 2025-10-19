@@ -18,6 +18,15 @@ const cssExtend = {
     '--prose-borders': '#eee',
   },
 
+  'h2': {
+    'font-family': fonts.header,
+    'font-size': '1.375rem', // 22px
+  },
+  'h3': {
+    'font-family': fonts.header,
+    'font-size': '1.25rem', // 20px
+  },
+
   'code::before,code::after': {
     content: 'none',
   },
@@ -64,9 +73,9 @@ export default defineConfig({
     presetAttributify(),
     presetIcons({ scale: 1.2, warn: true }),
     presetWebFonts({
-      provider: 'fontshare',
+      provider: 'google',
       fonts: {
-        neco: 'Neco',
+        lora: 'Lora',
       },
     }),
     presetTheme ({
@@ -83,7 +92,7 @@ export default defineConfig({
     fontFamily: fonts,
   },
   shortcuts: [
-    ['post-title', 'font-header text-5 font-bold lh-7.5 m-0'],
+    ['post-title', 'font-header text-1.5rem font-bold lh-7.5 m-0'],
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
   safelist: [

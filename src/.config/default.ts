@@ -58,7 +58,7 @@ export const defaultConfig: ThemeConfig = {
     },
     fonts: {
       header:
-        '"Neco", sans-serif',
+        '"Neco", "Lora", sans-serif',
       ui: '"Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
     },
   },
