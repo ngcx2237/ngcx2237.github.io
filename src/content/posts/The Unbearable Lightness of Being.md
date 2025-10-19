@@ -42,7 +42,7 @@ Parmenides posed this very question in the sixth century before Christ. He saw t
 
 light/darkness, fineness/coarseness, warmth/cold, being/non-being. One half of the opposition he called positive (light, fineness, warmth, being), the other negative. We might find this division into positive and negative poles childishly simple except for one difficulty: which one is positive, weight or lightness?
 
-Parmenides responded: lightness is positive, weight negative.Was he correct or not?
+Parmenides responded: lightness is positive, weight negative. Was he correct or not?
 
 That is the question. The only certainty is: the lightness/weight opposition is the most mysterious, most ambiguous of all.
 
@@ -172,7 +172,7 @@ But from that time on, everything seemed to conspire against him. Not a day went
 
 At first he denied it all. Then, when the evidence became too blatant, he argued that his polygamous way of life did not in the least run counter to his love for her. He was inconsistent: first he disavowed his infidelities, then he tried to justify them.
 
-Once he was saying good-bye after making a date with a woman on the phone, when from the next room came a strange sound like the chattering of teeth.By chance she had come home without his realizing it. She was pouring something from a medicine bottle down her throat, and her hand shook so badly the glass bottle clicked against her teeth.
+Once he was saying good-bye after making a date with a woman on the phone, when from the next room came a strange sound like the chattering of teeth. By chance she had come home without his realizing it. She was pouring something from a medicine bottle down her throat, and her hand shook so badly the glass bottle clicked against her teeth.
 
 He pounced on her as if trying to save her from drowning. The bottle fell to the floor, spotting the carpet with valerian drops. She put up a good fight, and he had to keep her in a straitjacket-like hold for a quarter of an hour before he could calm her.
 
@@ -354,7 +354,7 @@ For seven years he had lived bound to her, his every step subject to her scrutin
 
 He soared. He had entered Parmenides’ magic field: he was enjoying the sweet lightness of being.
 
-(Did he feel like phoning Sabina in Geneva? Contacting one or another of the women he had met during his several months in Zurich? No, not in the least. Perhaps he sensed that any woman would make his memory of Tereza unbearably painful.) This curious melancholic fascination lasted until Sunday evening. .On Monday, everything changed. Tereza forced her way into his thoughts: he imagined her sitting there writing her farewell letter; he felt her hands trembling; he saw her lugging her heavy suitcase in one hand and leading Karenin on his leash with the other; he pictured her unlocking their Prague flat, and suffered the utter abandonment breathing her in the face as she opened the door.
+(Did he feel like phoning Sabina in Geneva? Contacting one or another of the women he had met during his several months in Zurich? No, not in the least. Perhaps he sensed that any woman would make his memory of Tereza unbearably painful.) This curious melancholic fascination lasted until Sunday evening. On Monday, everything changed. Tereza forced her way into his thoughts: he imagined her sitting there writing her farewell letter; he felt her hands trembling; he saw her lugging her heavy suitcase in one hand and leading Karenin on his leash with the other; he pictured her unlocking their Prague flat, and suffered the utter abandonment breathing her in the face as she opened the door.
 
 During those two beautiful days of melancholy, his compassion (that curse of emotional telepathy) had taken a holiday. It had slept the sound Sunday sleep of a miner who, after a hard week’s work, needs to gather strength for his Monday shift.
 
